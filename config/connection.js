@@ -2,7 +2,7 @@ const Sequelize = require("sequelize");
 require("dotenv").config();
 
 let sequelize;
-
+// TODO - update to Heroku base url
 if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSBD_URL);
 } else {
