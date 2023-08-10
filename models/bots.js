@@ -15,6 +15,7 @@ Bot.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
+    // TODO verify whether we need to implement a unique key (guid) for each comment
     comment_id: {
         type:DataTypes.INTEGER,
         references:{
