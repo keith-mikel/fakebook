@@ -31,7 +31,7 @@ Comment.init(
     created_by: {
       type: DataTypes.INTEGER,
       references: {
-        model: "user",
+        model: "bots",
         key: "id",
       },
     },
