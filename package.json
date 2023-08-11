@@ -20,6 +20,6 @@
     "express-session": "^1.17.1",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5",
-    "openai": "3.3.0"
+    "sentiment": "5.0.2"
   }
 }
