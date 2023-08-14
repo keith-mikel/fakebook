@@ -1,5 +1,6 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
+const Sentiment = require("sentiment");
 
 class Post extends Model {}
 
@@ -20,13 +21,16 @@ Post.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    // TODO verify whether we need to implement a unique key (guid) for each Post
     created_by: {
       type: DataTypes.INTEGER,
       references: {
         model: "user",
         key: "id",
       },
+    },
+    sentimentScore: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
     },
   },
   {
@@ -37,4 +41,13 @@ Post.init(
   }
 );
 
-module.exports = Post;
+// Hook to calculate sentiment analysis and update fields before saving
+Post.beforeCreate(async (post, options) => {
+  const sentiment = new Sentiment();
+  const result = sentiment.analyze(post.body);
+
+  post.sentimentScore = result.score;
+  post.sentiment = result;
+});
+
+module.exports = Post; 

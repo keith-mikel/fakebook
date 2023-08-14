@@ -15,14 +15,6 @@ Bot.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    // TODO Figure out if we need the bots to point to each of there comments
-    // comment_id: {
-    //     type:DataTypes.INTEGER,
-    //     references:{
-    //         model:'comment',
-    //         key:'id',
-    //     },
-    // },
   },
   {
     sequelize,
