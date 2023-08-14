@@ -3,6 +3,7 @@ const loginFormHandler = async (event) => {
     event.preventDefault();
 
     // Getting the value out of the form inputs/ Get the data from the login info and put it in a js object.
+    // If we dont use email as part of the login/user info, this will need to be changed, along with the routes. 
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
