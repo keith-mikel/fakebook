@@ -1,9 +1,9 @@
-
+//models
 const sequelize = require('../config/connection');
-const Users = require('../models/users')
-const Bots = require('../models/bots')
-const Posts = require('../models/posts')
-const Comments = require('../models/comments')
+const Users = require('../models/user')
+const Bots = require('../models/bot')
+const Posts = require('../models/post')
+const Comments = require('../models/comment')
 
 //import seeds
 const botSeedsData = require('./botsData.json');

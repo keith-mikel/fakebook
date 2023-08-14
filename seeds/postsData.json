@@ -2,21 +2,25 @@
     {
         "body": "post 1",
         "created_on": "8/10/2023",
-        "created_by": 1
+        "created_by": 1,
+        "sentimentScore": -2
     },
     {
         "body": "post 2",
         "created_on": "8/10/2023",
-        "created_by": 2
+        "created_by": 2,
+        "sentimentScore": 2
     },
     {
         "body": "post 3",
         "created_on": "8/10/2023",
-        "created_by": 3
+        "created_by": 3,
+        "sentimentScore": 0
     },
     {
         "body": "post 4",
         "created_on": "8/10/2023",
-        "created_by": 4
+        "created_by": 4,
+        "sentimentScore": -1
     }
 ]
