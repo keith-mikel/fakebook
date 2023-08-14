@@ -1,18 +1,18 @@
 [
     {
-        "name": "",
-        "password": ""
+        "name": "user1",
+        "password": "password1"
     },
     {
-        "name": "",
-        "password": ""
+        "name": "user2",
+        "password": "password2"
     },
     {
-        "name": "",
-        "password": ""
+        "name": "user3",
+        "password": "password3"
     },
     {
-        "name": "",
-        "password": ""
+        "name": "user4",
+        "password": "password4"
     }
 ]
