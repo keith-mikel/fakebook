@@ -1,8 +1,8 @@
-const express = require("express");
-const router = express.Router(); //do we need this here?
-const { Post } = require("../../models/posts"); // Make sure your model file path is correct
+// const express = require("express");
+const router = require("express").Router(); //do we need this here?
+const Posts = require("../../models/post"); // Make sure your model file path is correct
 
-router.get("/posts", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const postData = await Posts.findAll();
 
@@ -15,3 +15,5 @@ router.get("/posts", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+module.exports = router;

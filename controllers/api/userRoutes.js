@@ -2,11 +2,11 @@
 // When user is logged in, session is created based on the email and validates the password as valid.
 
 const router = require("express").Router();
-const { User } = require("../../models");
+const User = require("../../models/user");
 
 // Get All users by '/user'.'id' *We may not need 8 - 19, depends if we need to get all users during login...*
 // We could do this by 'name' instead of 'id', but that's not a key.
-router.get("/users", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const userData = await User.findAll();
 
