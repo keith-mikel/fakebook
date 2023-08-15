@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { Bot } = require("../../models/bot"); // Make sure your model file path is correct
+const { bot } = require("../../models"); // Make sure your model file path is correct
 
 const app = express();
 app.use(express.json());
@@ -8,7 +8,7 @@ app.use(express.json());
 // Get all bots
 app.get("/", async (req, res) => {
   try {
-    const bots = await Bot.findAll();
+    const bots = await bot.findAll();
     res.json(bots);
   } catch (error) {
     console.error(error);
@@ -19,7 +19,7 @@ app.get("/", async (req, res) => {
 // Get a specific bot by ID
 app.get("/:id", async (req, res) => {
   try {
-    const bot = await Bot.findByPk(req.params.id);
+    const bot = await bot.findByPk(req.params.id);
     if (!bot) {
       return res.status(404).json({ message: "Bot not found" });
     }
@@ -33,7 +33,7 @@ app.get("/:id", async (req, res) => {
 // Update a bot
 app.put("/:id", async (req, res) => {
   try {
-    const bot = await Bot.findByPk(req.params.id);
+    const bot = await bot.findByPk(req.params.id);
     if (!bot) {
       return res.status(404).json({ message: "Bot not found" });
     }
@@ -48,7 +48,7 @@ app.put("/:id", async (req, res) => {
 // Delete a bot
 app.delete("/:id", async (req, res) => {
   try {
-    const bot = await Bot.findByPk(req.params.id);
+    const bot = await bot.findByPk(req.params.id);
     if (!bot) {
       return res.status(404).json({ message: "Bot not found" });
     }

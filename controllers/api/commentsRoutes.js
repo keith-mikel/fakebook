@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
-const { Comment } = require('../../models/comment');
+const { comment } = require('../../models');
 
 
 // Get all comments
 router.get('/', async (req, res) => {
   try {
-    const comments = await Comment.findAll();
+    const comments = await comment.findAll();
     res.json(comments);
   } catch (error) {
     console.error(error);
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 // Get a specific comment by ID
 router.get('/:id', async (req, res) => {
   try {
-    const comment = await Comment.findByPk(req.params.id);
+    const comment = await comment.findByPk(req.params.id);
     if (!comment) {
       return res.status(404).json({ message: 'Comment not found' });
     }
