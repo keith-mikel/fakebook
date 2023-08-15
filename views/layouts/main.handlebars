@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> FAKEBOOK </title>
+  {{!-- TODO - Does 'public' need to preceed file paths in the handlebars files? --}}
+  <link rel="stylesheet" type="text/css" href="/public/css/reset.css">
+  {{!-- TODO - Add the style.css file - complete it --}}
+  {{!-- <link rel="stylesheet" type="text/css" href="/public/css/style.css"> --}}
+</head>
+
+<body>
+  <header>
+    <h1> Welcome to Fakebook </h1>
+  </header>
+  <nav>
+    <a href="/">Home</a>
+    {{#if loggedIn}}
+    <button id="logout" class="btn-no-style">Logout</button>
+    {{else}}
+    <a href="/login">Login</a>
+    {{/if}}
+  </nav>
+  <main>
+    <aside>
+      <h2>Newest Posts</h2>
+    </aside>
+    <div class="gallery">
+      {{{body}}}
+    </div>
+  </main>
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
