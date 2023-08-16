@@ -1,26 +1,25 @@
 [
     {
-        "name": "user1",
+        "name": "The ROCK",
         "email": "user1@hotmail.com",
         "password": "password1"
     },
     {
-        "name": "user2",
+        "name": "Michael B Jordan",
         "email":"user2@hotmail.com",
         "password": "password2"
     },
     {
-        "name": "user3",
+        "name": "Al Capone",
         "email": "user3@outlook.com",
         "password": "password3"
     },
     {
-        "name": "user4",
+        "name": "Steve Jobs",
         "email": "user4@domainname.com",
         "password": "password4"
     },
     {
-
         "name": "bob",
         "email": "god@gmail.com",
         "password": "amen"

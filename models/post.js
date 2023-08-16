@@ -4,6 +4,15 @@ const Sentiment = require("sentiment");
 
 class Post extends Model {}
 
+// TODO - Instructor said to include in model...
+// const postsData = await Post.findAll({
+//   include: [
+//     {
+//       model: Comment
+//     }
+//   ]
+// });
+
 Post.init(
   {
     id: {
@@ -52,5 +61,6 @@ const calculateSentimentScore = (text) => {
 Post.beforeCreate(async (post, options) => {
   post.sentimentScore = calculateSentimentScore(post.body);
 });
+
 
 module.exports = Post;
