@@ -1,0 +1,82 @@
+[
+
+    { "body": "I'm really glad to hear that!", "sentimentScore": 4, "bot_id": 1 },
+    { "body": "That's wonderful news!", "sentimentScore": 3, "bot_id": 1 },
+    { "body": "Great to know!", "sentimentScore": 2, "bot_id": 1 },
+    { "body": "I'm sorry to hear that.", "sentimentScore": -1, "bot_id": 1 },
+    { "body": "I hope things get better.", "sentimentScore": -2, "bot_id": 1 },
+    { "body": "It's not the end of the world.", "sentimentScore": -3, "bot_id": 1 },
+    { "body": "This too shall pass.", "sentimentScore": -4, "bot_id": 1 },
+    { "body": "I'm here to help!", "sentimentScore": 1, "bot_id": 1 },
+  
+
+    { "body": "Thank you for sharing your insights.", "sentimentScore": 3, "bot_id": 2 },
+    { "body": "Your input is appreciated.", "sentimentScore": 2, "bot_id": 2 },
+    { "body": "I see what you're saying.", "sentimentScore": 1, "bot_id": 2 },
+    { "body": "I'm sorry to hear that.", "sentimentScore": -2, "bot_id": 2 },
+    { "body": "I hope things get better.", "sentimentScore": -3, "bot_id": 2 },
+    { "body": "We'll work on resolving this.", "sentimentScore": -4, "bot_id": 2 },
+    { "body": "Your dedication is admirable.", "sentimentScore": 3, "bot_id": 2 },
+    { "body": "I'm here to assist.", "sentimentScore": 1, "bot_id": 2 },
+  
+
+    { "body": "Oh, that's just fantastic.", "sentimentScore": 3, "bot_id": 3 },
+    { "body": "What a surprise, more good news.", "sentimentScore": 2, "bot_id": 3 },
+    { "body": "I can hardly contain my excitement.", "sentimentScore": 1, "bot_id": 3 },
+    { "body": "Well, isn't that just perfect.", "sentimentScore": 0, "bot_id": 3 },
+    { "body": "Oh, what a tragedy.", "sentimentScore": -3, "bot_id": 3 },
+    { "body": "Could this get any worse?", "sentimentScore": -4, "bot_id": 3 },
+    { "body": "I'm laughing on the inside.", "sentimentScore": 2, "bot_id": 3 },
+    { "body": "I'm here, but barely awake.", "sentimentScore": 0, "bot_id": 3 },
+  
+    { "body": "I'm really sorry to hear that.", "sentimentScore": -3, "bot_id": 4 },
+    { "body": "I understand how you feel.", "sentimentScore": -2, "bot_id": 4 },
+    { "body": "Take your time, I'm here for you.", "sentimentScore": -1, "bot_id": 4 },
+    { "body": "That's a tough situation.", "sentimentScore": 0, "bot_id": 4 },
+    { "body": "I hope things improve for you.", "sentimentScore": 1, "bot_id": 4 },
+    { "body": "Stay strong, you can get through this.", "sentimentScore": 2, "bot_id": 4 },
+    { "body": "Sending positive vibes your way.", "sentimentScore": 3, "bot_id": 4 },
+    { "body": "I'm here to listen and support.", "sentimentScore": 4, "bot_id": 4 },
+    
+    
+    { "body": "Cool, thanks for sharing.", "sentimentScore": 1, "bot_id": 5 },
+    { "body": "Alright, got it.", "sentimentScore": 0, "bot_id": 5 },
+    { "body": "Hmm, interesting.", "sentimentScore": 0, "bot_id": 5 },
+    { "body": "Yeah, I guess so.", "sentimentScore": -1, "bot_id": 5 },
+    { "body": "Meh, not a big deal.", "sentimentScore": -2, "bot_id": 5 },
+    { "body": "Eh, whatever.", "sentimentScore": -3, "bot_id": 5 },
+    { "body": "Who cares, really?", "sentimentScore": -4, "bot_id": 5 },
+    { "body": "Sure thing, buddy.", "sentimentScore": 2, "bot_id": 5 },
+    
+    
+    { "body": "The possibilities are endless!", "sentimentScore": 4, "bot_id": 6 },
+    { "body": "Bright days are ahead!", "sentimentScore": 3, "bot_id": 6 },
+    { "body": "Stay positive, good things are coming.", "sentimentScore": 2, "bot_id": 6 },
+    { "body": "Even in challenges, there's opportunity.", "sentimentScore": 1, "bot_id": 6 },
+    { "body": "Let's focus on the silver lining.", "sentimentScore": 0, "bot_id": 6 },
+    { "body": "Every setback is a setup for a comeback.", "sentimentScore": 1, "bot_id": 6 },
+    { "body": "Don't let anything dull your shine.", "sentimentScore": 3, "bot_id": 6 },
+    { "body": "Positivity is the key to success!", "sentimentScore": 4, "bot_id": 6 },
+    
+    
+    { "body": "Let's proceed with caution.", "sentimentScore": 1, "bot_id": 7 },
+    { "body": "We should carefully consider our options.", "sentimentScore": 2, "bot_id": 7 },
+    { "body": "I'm a bit wary of this situation.", "sentimentScore": 0, "bot_id": 7 },
+    { "body": "We need to be mindful of potential risks.", "sentimentScore": -1, "bot_id": 7 },
+    { "body": "I'd advise treading carefully.", "sentimentScore": -2, "bot_id": 7 },
+    { "body": "Let's not jump in without thinking.", "sentimentScore": -3, "bot_id": 7 },
+    { "body": "This seems like a risky move.", "sentimentScore": -4, "bot_id": 7 },
+    { "body": "Let's proceed with cautious optimism.", "sentimentScore": 2, "bot_id": 7 },
+    
+    
+    { "body": "I'm curious to know more about that.", "sentimentScore": 1, "bot_id": 8 },
+    { "body": "Interesting, could you elaborate?", "sentimentScore": 2, "bot_id": 8 },
+    { "body": "I'm intrigued by your perspective.", "sentimentScore": 1, "bot_id": 8 },
+    { "body": "I'd like to understand this better.", "sentimentScore": 0, "bot_id": 8 },
+    { "body": "Hmm, I wonder how that works.", "sentimentScore": 0, "bot_id": 8 },
+    { "body": "I'm curious, could this lead to new insights?", "sentimentScore": 1, "bot_id": 8 },
+    { "body": "I'm curious like a cat!", "sentimentScore": 2, "bot_id": 8 },
+    { "body": "Let's dig deeper into this.", "sentimentScore": 3, "bot_id": 8 }
+]
+      
+  

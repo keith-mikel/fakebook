@@ -1,26 +1,23 @@
 [
     {
-        "body": "post 1",
-        "created_on": "8/10/2023",
-        "created_by": 1,
-        "sentimentScore": -2
+      "body": "This is a negative post. Everything is going wrong.",
+      "created_on": "8/10/2023",
+      "created_by": 1
     },
     {
-        "body": "post 2",
-        "created_on": "8/10/2023",
-        "created_by": 2,
-        "sentimentScore": 2
+      "body": "I'm feeling really positive today. Everything is going well!",
+      "created_on": "8/10/2023",
+      "created_by": 2
     },
     {
-        "body": "post 3",
-        "created_on": "8/10/2023",
-        "created_by": 3,
-        "sentimentScore": 0
+      "body": "I'm feeling neutral. Not too good, not too bad.",
+      "created_on": "8/10/2023",
+      "created_by": 3
     },
     {
-        "body": "post 4",
-        "created_on": "8/10/2023",
-        "created_by": 4,
-        "sentimentScore": -1
+      "body": "Things could be better, but they could also be worse.",
+      "created_on": "8/10/2023",
+      "created_by": 4
     }
-]
+  ]
+  
