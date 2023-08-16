@@ -41,13 +41,16 @@ Post.init(
   }
 );
 
-// Hook to calculate sentiment analysis and update fields before saving
-Post.beforeCreate(async (post, options) => {
+// Function to calculate sentiment score
+const calculateSentimentScore = (text) => {
   const sentiment = new Sentiment();
-  const result = sentiment.analyze(post.body);
+  const result = sentiment.analyze(text);
+  return result.score;
+};
 
-  post.sentimentScore = result.score;
-  post.sentiment = result;
+// Hook to update sentimentScore before creating a post
+Post.beforeCreate(async (post, options) => {
+  post.sentimentScore = calculateSentimentScore(post.body);
 });
 
-module.exports = Post; 
+module.exports = Post;
