@@ -6,26 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> FAKEBOOK </title>
   {{!-- TODO - Does 'public' need to preceed file paths in the handlebars files? --}}
-  <link rel="stylesheet" type="text/css" href="/public/css/reset.css">
+  {{!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> --}}
   {{!-- TODO - Add the style.css file - complete it --}}
-  {{!-- <link rel="stylesheet" type="text/css" href="/public/css/style.css"> --}}
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <header>
-    <h1> Welcome to Fakebook </h1>
+    <h1 id="border"> Welcome to Fakebook </h1>
   </header>
   <nav>
-    <a href="/">Home</a>
-    {{#if loggedIn}}
-    <button id="logout" class="btn-no-style">Logout</button>
+      <a href="/" id="nav-button">Home</a>
+      {{#if loggedIn}}
+      <button id="logout" class="btn-no-style" id="nav-button">Logout</button>
     {{else}}
-    <a href="/login">Login</a>
+      <a href="/login" id="nav-button">Login</a>
     {{/if}}
   </nav>
   <main>
     <aside>
-      <h2>Newest Posts</h2>
+      {{#if loggedIn}}
+        <h2>Newest Posts</h2>
+      {{/if}}
     </aside>
     <div class="gallery">
       {{{body}}}

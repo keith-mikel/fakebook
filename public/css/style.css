@@ -1,0 +1,78 @@
+:root{
+    --background: ;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+#title{
+    padding: 1%;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    margin: auto 1em;
+}
+
+nav a{
+    margin: auto .5em;
+}
+
+main{
+    
+}
+
+#placement{
+    display: flex;
+    flex-direction: row;
+    margin: 3em 6em;
+    justify-content: space-between;
+}
+
+#login-create{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+a{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+#form-group{
+    display: flex;
+    margin: 5% auto;
+}
+
+#create-form{
+    display: flex;
+    margin: 5% auto;
+}
+
+#nav-button{
+    padding: 1%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+#border{
+    display: flex;
+    padding: 1%;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+#link-button{
+    padding: 1%;
+    border-radius: 3px;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+}
