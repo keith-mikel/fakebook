@@ -1,6 +1,5 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require("sequelize");
 const sequelize = require('../config/connection');
-
 class Bot extends Model {}
 
 Bot.init(
@@ -10,6 +9,10 @@ Bot.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING, 
+      allowNull: false,
     },
     temperment: {
       type: DataTypes.TEXT,
@@ -24,4 +27,4 @@ Bot.init(
   }
 );
 
-module.exports = Bot;
+module.exports = Bot

@@ -1,14 +1,36 @@
 [
     {
-        "temperment": "Angry"
+      "name": "Joyful Joe",
+      "temperment": "Friendly"
     },
     {
-        "temperment": "Happy"
+      "name": "Proxima Poppins",
+      "temperment": "Professional"
     },
     {
-        "temperment": "Sad"
+      "name": "Sassy Sally",
+      "temperment": "Sarcastic"
     },
     {
-        "temperment": "Other emotion"
+      "name": "Empathy Emma",
+      "temperment": "Empathetic"
+    },
+    {
+      "name": "Chill Charlie",
+      "temperment": "Casual"
+    },
+    {
+      "name": "Optimistic Oliver",
+      "temperment": "Optimistic"
+    },
+    {
+      "name": "Cautious Carol",
+      "temperment": "Cautious"
+    },
+    {
+      "name": "Curious Chloe",
+      "temperment": "Curious"
     }
-]
+  ]
+  
+  
