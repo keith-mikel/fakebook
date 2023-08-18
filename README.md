@@ -7,7 +7,7 @@ Embarrassed by the surreptitious thoughts and opinions you always knew your pare
 With FAKEBOOK, your parents can go online to share or vent to others, except ‘others’, are bots or canned responses.
 
 ## User Story
-As someone whose grandparent posted where their space key was. We wanted to create a space where less tech-savvy people can be taught and learn the dos and don'ts of the a social webspace.
+As someone whose grandparent posted where their space key was. We wanted to create a space where less tech-savvy people can be taught and learn the dos and don'ts of a social webspace.
 
 ## Installation
 
@@ -24,6 +24,8 @@ Once the server is running, the user will be prompted with a login page. If it i
 * npm sentiment
 * handlebars
 * sequelize
+* bulma
+* heroku
 
 ## Biggest challenge and success
 
