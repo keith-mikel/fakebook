@@ -1,9 +1,6 @@
 <div> BOB LIVES HERE </div> {{#each users as |user|}}
+{{user.name}}
 {{user.email}}
-{{/each}}
+{{user.id}}
 
-{{#each posts as |post|}}
-{{post.id}}
-{{post.body}}
-{{post.sentimentScore}}
 {{/each}}
