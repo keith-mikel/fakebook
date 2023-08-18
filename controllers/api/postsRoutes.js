@@ -25,13 +25,13 @@ router.post('/', async (req, res) => {
   try {
     const newPost = await Post.create({
       body: req.body.body,
-      created_by: req.body.created_by,
+      created_by: req.session.user_id,
     });
 
     await createCommentsFromResponses(newPost.id);
 
     // Respond with a success message
-    res.status(201).json({ message: 'Post and comments created successfully!' });
+    res.redirect('/');
   } catch (error) {
     console.error('Error creating post and comments:', error);
     res.status(500).json({ error: 'An error occurred while creating post and comments.' });

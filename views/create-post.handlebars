@@ -1,0 +1,18 @@
+<!-- views/create-post.handlebars -->
+
+<div class="container">
+  <h1 class="title">Create a New Post</h1>
+  <form action="/api/posts" method="post">
+    <div class="field">
+      <label class="label" for="body">Post Content:</label>
+      <div class="control">
+        <textarea class="textarea" id="body" name="body" rows="4" required></textarea>
+      </div>
+    </div>
+    <div class="field">
+      <div class="control">
+        <button class="button is-primary" type="submit">Create Post</button>
+      </div>
+    </div>
+  </form>
+</div>
