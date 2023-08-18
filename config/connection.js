@@ -2,9 +2,11 @@ const Sequelize = require("sequelize");
 require("dotenv").config();
 
 let sequelize;
-// TODO - update to Heroku base url
+
 if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL);
+  sequelize = new Sequelize(process.env.JAWSDB_URL, {
+    dialect: "mysql",
+  });
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
@@ -12,10 +14,11 @@ if (process.env.JAWSDB_URL) {
     process.env.DB_PASSWORD,
     {
       host: "localhost",
-      dialect: "mysql", // Provide the correct dialect here
+      dialect: "mysql",
       port: 3306,
     }
   );
 }
+
 
 module.exports = sequelize;
