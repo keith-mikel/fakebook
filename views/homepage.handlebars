@@ -1,6 +1,31 @@
-<div> BOB LIVES HERE </div> {{#each users as |user|}}
-{{user.name}}
-{{user.email}}
-{{user.id}}
+{{!< layouts/main}}
 
-{{/each}}
+<section class="section">
+  <div class="container">
+    {{#each posts}}
+      <article class="media">
+        <div class="media-content">
+          <div class="content">
+            <h1 class="title">{{title}}</h1>
+            <p>{{body}}</p>
+            <p class="has-text-grey-light">Created on: {{created_on}}</p> <!-- Move the post created date here -->
+          </div>
+          <nav class="level is-mobile">
+            <div class="level-left">
+              <h3 class="subtitle">Comments:</h3>
+            </div>
+          </nav>
+          <ul class="box">
+            {{#each Comments}}
+              <li class="box">
+                <p class="has-text-dark">{{body}}</p>
+                <p class="has-text-grey-light">Created on: {{created_on}} - Created by: {{bot.name}}</p>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      </article>
+      <hr>
+    {{/each}}
+  </div>
+</section>
