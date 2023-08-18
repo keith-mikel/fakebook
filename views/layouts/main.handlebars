@@ -4,35 +4,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> FAKEBOOK </title>
-  {{!-- TODO - Does 'public' need to preceed file paths in the handlebars files? --}}
-  {{!-- <link rel="stylesheet" type="text/css" href="/css/reset.css"> --}}
-  {{!-- TODO - Add the style.css file - complete it --}}
+  <title>FAKEBOOK</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
-  <header>
-    <h1 id="border"> Welcome to Fakebook </h1>
-  </header>
-  <nav>
-      <a href="/" id="nav-button">Home</a>
-      {{#if loggedIn}}
-      <button id="logout" class="btn-no-style" id="nav-button">Logout</button>
-    {{else}}
-      <a href="/login" id="nav-button">Login</a>
-    {{/if}}
-  </nav>
-  <main>
-    <aside>
-      {{#if loggedIn}}
-        <h2>Newest Posts</h2>
-      {{/if}}
-    </aside>
-    <div class="gallery">
-      {{{body}}}
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title is-size-1 has-text-white">Welcome to Fakebook</h1>
+      </div>
     </div>
-  </main>
+  </section>
+
+{{#if loggedIn}}
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">
+          <button class="button is-primary is-outlined">Home</button>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a class="navbar-item">
+          <button id="logout" class="button is-primary is-outlined">Logout</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+{{/if}}
+
+
+  <div class="container">
+    {{{body}}}
+  </div>
+
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}
