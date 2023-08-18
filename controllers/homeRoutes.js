@@ -24,6 +24,11 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+// Render the create post page
+router.get('/create', (req, res) => {
+  res.render('create-post'); // Render the create-post.handlebars template
+});
+
 
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
