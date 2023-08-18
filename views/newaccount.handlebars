@@ -5,6 +5,9 @@
   <h2> Create Your New Account! </h2>
   <div class="login-card" id="login-create">
     <h2 class="page-title">New Account</h2>
+    <form class="form signup-form" action="/api/users" method="post">
+      <div class="form-group">
+        <input class="form-input" type="text" name="name" placeholder="New Username" required />
       </div>
       <div class="form-group">
         <input class="form-input" type="text" name="email" placeholder="Email" required />
