@@ -4,6 +4,7 @@ const { Post } = require('../../models');
 const createCommentsFromResponses = require('../../public/js/generate-comments');
 
 
+
 // Other route handlers go here
 
 
@@ -37,5 +38,7 @@ router.post('/', async (req, res) => {
     res.status(500).json({ error: 'An error occurred while creating post and comments.' });
   }
 });
+
+
 
 module.exports = router;

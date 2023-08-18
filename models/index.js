@@ -13,22 +13,21 @@ Post.belongsTo(User, {
   foreignKey: "created_by",
 });
 
-User.hasMany(Comment, {
-  foreignKey: "created_by",
-  onDelete: "CASCADE",
-});
-
 Post.hasMany(Comment, {
   foreignKey: "post_id",
 });
 
-Comment.belongsTo(User, {
+Comment.belongsTo(Bot, {
   foreignKey: "created_by",
 });
 
 Comment.belongsTo(Post, {
   foreignKey: "post_id",
 });
+
+Bot.hasMany(Comment, {
+  foreignKey: "created_by"
+})
 
 Response.belongsTo(Bot, {
   foreignKey: "bot_id",
