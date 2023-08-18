@@ -1,26 +1,27 @@
 [
     {
-        "body": "message from bot1",
-        "created_on": "8/10/2023",
-        "post_id": 1,
-        "created_by": 1
+      "body": "This is an interesting discussion. I think the topic is quite relevant.",
+      "created_on": "8/10/2023",
+      "post_id": 1,
+      "created_by": 1
     },
     {
-        "body": "message from bot2",
-        "created_on": "8/10/2023",
-        "post_id": 2,
-        "created_by": 2
+      "body": "I appreciate the insights shared in this post. Great work!",
+      "created_on": "8/10/2023",
+      "post_id": 2,
+      "created_by": 2
     },
     {
-        "body": "message from bot3",
-        "created_on": "8/10/2023",
-        "post_id": 3,
-        "created_by": 3
+      "body": "The different perspectives presented here are thought-provoking. Kudos to the author.",
+      "created_on": "8/10/2023",
+      "post_id": 3,
+      "created_by": 3
     },
     {
-        "body": "message from bot4",
-        "created_on": "8/10/2023",
-        "post_id": 4,
-        "created_by": 4
+      "body": "I've gained a lot from reading this post. Looking forward to more content.",
+      "created_on": "8/10/2023",
+      "post_id": 4,
+      "created_by": 4
     }
-]
+  ]
+  

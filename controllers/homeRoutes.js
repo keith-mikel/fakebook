@@ -1,12 +1,15 @@
 const router = require("express").Router();
-const { User, Post, Comment } = require("../models");
+const { User, Post, Comment, Bot } = require("../models");
 const withAuth = require("../utils/auth");
 
 router.get('/', withAuth, async (req, res) => {
   try {
     const postData = await Post.findAll({
       order: [['created_on', 'DESC']],
-      include: [{ model: Comment, as: 'Comments' }], // Include associated comments
+      include: [
+        { model: Comment, as: 'Comments', include: [{ model: Bot, as: 'bot' }] },
+        { model: User, as: 'user' },
+      ],
     });
 
     const posts = postData.map((post) => {
@@ -24,11 +27,11 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+
 // Render the create post page
 router.get('/create', (req, res) => {
   res.render('create-post'); // Render the create-post.handlebars template
 });
-
 
 
 router.get("/login", (req, res) => {
