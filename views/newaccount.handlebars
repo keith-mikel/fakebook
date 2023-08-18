@@ -1,29 +1,23 @@
+  <a class="navbar-item" href="/">
+    <button class="button is-primary is-outlined">Home</button>
+  </a>
 <div id="placement">
   <h2> Create Your New Account! </h2>
 
   <div class="login-card" id="login-create">
     <h2 class="page-title">New Account</h2>
-    <form action="/api/newaccount" method="post"></form>
-    <form class="form signup-form">
-      <div class="form-group" id="create-form">
-        {{!<label for="username-signup">Name:</label>}}
-        <input class="form-input" type="text" id="username-create" placeholder="New Username"/>
-      </div>
-      <div class="form-group" id="create-form">
-        {{!<label for="email-signup">Email:</label>}}
-        <input class="form-input" type="text" id="email-create" placeholder="Email"/>
-      </div>
-      <div class="form-group" id="create-form">
-        {{!<label for="password-signup">Password:</label>}}
-        <input class="form-input" type="password" id="password-create" placeholder="New Password"/>
       </div>
       <div class="form-group">
-        {{!-- TODO - link Create New Account button to the newaccountRoutes --}}
+        <input class="form-input" type="text" name="email" placeholder="Email" required />
+      </div>
+      <div class="form-group">
+        <input class="form-input" type="password" name="password" placeholder="New Password" required />
+      </div>
+      <div class="form-group">
         <button class="btn btn-primary" type="submit">Create New Account</button>
       </div>
-        {{!-- TODO - link Back Button to homepage --}}
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">Back to Hompage</button>
+        <a href="/" class="btn btn-primary">Back to Homepage</a>
       </div>
     </form>
   </div>

@@ -30,13 +30,13 @@ router.get('/create', (req, res) => {
 });
 
 
+
 router.get("/login", (req, res) => {
   if (req.session.logged_in) {
-    // res.redirect("/");
-    // return;
+    return res.redirect('/');
   }
-
   res.render("login");
 });
+
 
 module.exports = router;

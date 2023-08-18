@@ -19,6 +19,31 @@ router.get("/", async (req, res) => {
   }
 });
 
+// Route for creating a new user
+router.post('/', async (req, res) => {
+  try {
+    const { name, email, password } = req.body;
+
+    const newUser = await User.create({
+      name,
+      email,
+      password,
+    });
+
+    req.session.save(() => {
+      req.session.user_id = newUser.id;
+      req.session.logged_in = true;
+      res.redirect('/');
+    });
+
+  } catch (error) {
+    console.error('Error creating user:', error);
+    res.status(500).json({ error: 'An error occurred while creating user.' });
+  }
+});
+
+
+
 // If we don't want to keep email, we can update this to use 'name' (name: req.body.name)
 router.post("/login", async (req, res) => {
   try {
